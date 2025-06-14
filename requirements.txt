@@ -1,3 +1,4 @@
 Flask==2.3.3
 line-bot-sdk==3.8.0
 googletrans==4.0.0-rc1
+gunicorn==21.2.0
