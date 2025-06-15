@@ -22,10 +22,10 @@ JP_SUBSTRING_PATTERN = re.compile(r'[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uff
 ASCII_PATTERN = re.compile(r'[\u0000-\u007F]')
 
 # Use unique, non-alphabetic placeholders (lowercase for consistency)
-PLACEHOLDER_TEMPLATE = '[[jp{}]]'
-PLACEHOLDER_REGEX = re.compile(r'\[\[jp(\d+)\]\]', re.IGNORECASE)
-TERM_PLACEHOLDER_TEMPLATE = '[[term{}]]'
-TERM_PLACEHOLDER_REGEX = re.compile(r'\[\[term(\d+)\]\]', re.IGNORECASE)
+PLACEHOLDER_TEMPLATE = '__jp{}__'
+PLACEHOLDER_REGEX = re.compile(r'__jp(\d+)__', re.IGNORECASE)
+TERM_PLACEHOLDER_TEMPLATE = '__term{}__'
+TERM_PLACEHOLDER_REGEX = re.compile(r'__term(\d+)__', re.IGNORECASE)
 
 # Example custom vocabulary dictionaries
 EN_TO_JA_TERMS = {
