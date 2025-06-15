@@ -164,6 +164,17 @@ def move_president_before_name_ja_to_en(text):
     pattern = re.compile(r'([A-Zぁ-んァ-ン一-龥][a-zA-Zぁ-んァ-ン一-龥]+)会長')
     return pattern.sub(lambda m: f"President {m.group(1)}", text)
 
+def postprocess_japanese_translation(text):
+    # If 'アクセス' appears in a sentence with '友達' (friend) or '会員' (member), replace with '訪問'
+    # List of context words that suggest 'visit' means '訪問'
+    context_words = ['友達', '会員', 'メンバー', '家族', '兄弟', '姉妹', '教会員']
+    for word in context_words:
+        # Look for the context word within 10 characters of 'アクセス'
+        pattern = re.compile(rf'{word}.{{0,10}}アクセス|アクセス.{{0,10}}{word}')
+        if pattern.search(text):
+            text = text.replace('アクセス', '訪問')
+    return text
+
 @app.route("/")
 def health_check():
     return "JKMBot is running!"
@@ -220,6 +231,8 @@ def handle_message(event):
             translated = restore_placeholders(translation.text, placeholder_map)
             # 5. Restore special terms
             translated = restore_term_placeholders(translated, term_map)
+            # Post-process for context-sensitive corrections
+            translated = postprocess_japanese_translation(translated)
             print(f"Translated text: {translated}")
         else:
             # Japanese dominant
