@@ -61,6 +61,7 @@ EN_TO_JA_TERMS = {
     'telestial kingdom': '星の栄え',
     'sano': '佐野',
     'president sano': '佐野会長',
+    'sister sano': '佐野姉妹',
 
     # Old Testament specific terms
     # some are commented out because they are common words or names
@@ -176,8 +177,8 @@ JA_TO_EN_TERMS = {
     '日の栄え': 'celestial kingdom',
     '月の栄え': 'terrestrial kingdom',
     '星の栄え': 'telestial kingdom',
-    '佐野': 'Sano',
     '佐野会長': 'President Sano',
+    '佐野姉妹': 'Sister Sano',
 
     # Old Testament specific terms
     # some are commented out because they are common words or names
