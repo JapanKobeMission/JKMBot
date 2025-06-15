@@ -9,6 +9,12 @@ This bot was designed for translating Japanese to English, and vice versa, with 
 
 /no - sends a message without translating it
 
+## Editing the Dictionary
+If for some reason you need to add new terms to the dictionary, edit the file called "app.py" and add terms to the dictionary following the same format as the other terms! It should look like this:
+  '[key]': '[definition]',
+  '[english]': '[japanese]'
+depending on which dictionary you are adding to! There are two dictionaries, one for English -> Japanese, and one for Japanese -> English!
+
 ## Author
 This bot was created by Elder Luke Haws! If you have any questions, please hit him up on:
 
