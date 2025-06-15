@@ -31,6 +31,7 @@ TERM_PLACEHOLDER_REGEX = re.compile(r'\[\[term(\d+)\]\]', re.IGNORECASE)
 EN_TO_JA_TERMS = {
     'baptism': 'バプテスマ',
     'missionary': '宣教師',
+    'missionaries': '宣教師たち',
     'the church of jesus christ of latter-day saints': '末日聖徒イエス・キリスト教会',
     'sacrament': '聖餐',
     'sacrament meeting': '聖餐会',
@@ -44,6 +45,7 @@ EN_TO_JA_TERMS = {
     'god': '神様',
     'japan kobe mission': '日本神戸伝道部',
     'mission': '伝道部',
+    'missionary work': '伝道',
     'ward': 'ワード',
     'Nephi': 'ニーファイ',
     'Jacob': 'ヤコブ',
@@ -59,15 +61,18 @@ EN_TO_JA_TERMS = {
     'kaichou': '会長',
     'member': '会員',
     'church member': '教会員',
+    'members': '会員たち',
     'mission president': '伝道部会長',
     'law of chastity': '純潔の律法',
     'law of tithing': '什分の一の律法',
     'tithing': '什分の一',
+    'zone conference': 'ゾーン大会',
     # Add more terms as needed
 }
 JA_TO_EN_TERMS = {
     'バプテスマ': 'baptism',
     '宣教師': 'missionary',
+    '宣教師たち': 'missionaries',
     '末日聖徒イエス・キリスト教会': 'The Church of Jesus Christ of Latter-day Saints',
     '聖餐': 'sacrament',
     '聖餐会': 'sacrament meeting',
@@ -78,6 +83,7 @@ JA_TO_EN_TERMS = {
     'イエス・キリスト': 'Jesus Christ',
     '神様': 'God',
     '日本神戸伝道部': 'Japan Kobe Mission',
+    '伝道': 'missionary work',
     '伝道部': 'mission',
     'ワード': 'Ward',
     'ニーファイ': 'Nephi',
@@ -93,10 +99,11 @@ JA_TO_EN_TERMS = {
     'モロナイ': 'Moroni',
     '会員': 'member',
     '教会員': 'church member',
+    '会員たち': 'members',
     '純潔の律法': 'law of chastity',
     '伝道部会長': 'mission president',
     '什分の一': 'tithing',
-    
+    'ゾーン大会': 'zone conference',
     # Add more terms as needed
 }
 
