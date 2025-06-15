@@ -17,7 +17,7 @@ If for some reason you need to add new terms to the dictionary, edit the file ca
     '[key]': '[definition]',
     '[english]': '[japanese]'
   
-depending on which dictionary you are adding to! There are two dictionaries, one for English -> Japanese, and one for Japanese -> English!
+depending on which dictionary you are adding to! There are two dictionaries, one for English -> Japanese, and one for Japanese -> English! You can edit the code either in a code editor, or within GitHub itself! (It might be easier to do it within GitHub if you don't know anything about VSCode or coding in general) 
 
 ## Author
 This bot was created by Elder Luke Haws! If you have any questions, please hit him up on:
