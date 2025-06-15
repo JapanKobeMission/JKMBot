@@ -57,6 +57,12 @@ EN_TO_JA_TERMS = {
     'Ether': 'エテル',
     'Moroni': 'モロナイ',
     'kaichou': '会長',
+    'member': '会員',
+    'church member': '教会員',
+    'mission president': '伝道部会長',
+    'law of chastity': '純潔の律法',
+    'law of tithing': '什分の一の律法',
+    'tithing': '什分の一',
     # Add more terms as needed
 }
 JA_TO_EN_TERMS = {
@@ -85,7 +91,12 @@ JA_TO_EN_TERMS = {
     'ヘラマン': 'Helaman',
     'エテル': 'Ether',
     'モロナイ': 'Moroni',
-
+    '会員': 'member',
+    '教会員': 'church member',
+    '純潔の律法': 'law of chastity',
+    '伝道部会長': 'mission president',
+    '什分の一': 'tithing',
+    
     # Add more terms as needed
 }
 
