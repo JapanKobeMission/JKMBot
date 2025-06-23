@@ -18,7 +18,7 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 translator = Translator()
 
 # Helper regex patterns
-JP_SUBSTRING_PATTERN = re.compile(r'[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uff66-\uff9f]+')  # contiguous Japanese
+JP_SUBSTRING_PATTERN = re.compile(r'[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uff66-\uff9f\u3000-\u303F]+')  # contiguous Japanese + punctuation
 ASCII_PATTERN = re.compile(r'[\u0000-\u007F]')
 
 # Use unique, non-alphabetic placeholders (lowercase for consistency)
